@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const connectDB = async () => {
-  const mongoUrl = process.env.MONGO_URL;
+const mongoUrl = process.env.MONGO_URI;
 
   if (!mongoUrl) {
     console.error("ENV DUMP:", Object.keys(process.env));
